@@ -45,16 +45,4 @@ class $ {
     });
     return this;
   }
-  blink (msInterval) {
-    setInterval(() => {
-      this.elements.forEach(element => {
-        if (element.style.display === 'none') {
-          element.style.display = 'inherit';
-        } else {
-          element.style.display = 'none';
-        }
-      });
-    }, msInterval);
-    return this;
-  }
 }
